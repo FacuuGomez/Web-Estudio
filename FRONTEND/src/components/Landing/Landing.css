@@ -22,10 +22,28 @@
 
 .cover-home {
 	top: 15%;
-	height: 80%;
+	height: 75%;
 	width: 100%;
 	max-width: 1000px;
 	position: absolute;
+
+	display: flex;
+	align-items: flex-end;
+}
+
+.cover-home img {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 400px;
+	filter: invert();
+}
+
+.contactanos ul {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-top: 10px;
 }
 
 .wave-1 {
@@ -53,6 +71,74 @@
 /* NOSOTROS */
 /* ---------------------------------------------------------------------------------------- */
 
+#nosotros {
+	display: flex;
+	justify-content: center;
+}
+
 .container-nosotros {
-	padding: 20px;
+	max-width: 1000px;
+	width: 100%;
+	margin-top: 15px;
+
+	border: 2px solid red;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ÁREAS DE PRACTICA */
+/* ---------------------------------------------------------------------------------------- */
+
+#areas {
+	display: flex;
+	justify-content: center;
+}
+
+.container-areas {
+	max-width: 1000px;
+	width: 100%;
+	margin-top: 15px;
+
+	border: 2px solid red;
+}
+
+.cover-cards {
+	padding-left: 15px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* SERVICIOS */
+/* ---------------------------------------------------------------------------------------- */
+
+#servicios {
+	display: flex;
+	justify-content: center;
+}
+
+.container-servicios {
+	max-width: 1000px;
+	width: 100%;
+	margin-top: 15px;
+
+	border: 2px solid red;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* CONTACTO */
+/* ---------------------------------------------------------------------------------------- */
+
+#contacto {
+	display: flex;
+	justify-content: center;
+}
+
+.container-contacto {
+	max-width: 1000px;
+	width: 100%;
+	margin-top: 15px;
+
+	border: 2px solid red;
+}
+
+.container-contacto ul {
+	padding-left: 15px;
 }
