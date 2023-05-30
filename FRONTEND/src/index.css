@@ -2,14 +2,18 @@
 	--gradient-color: linear-gradient(90deg, #008dd2 0%, #61ff56 100%);
 	--gradient-color2: linear-gradient(90deg, #008dd2 0%, #61ff56 60%);
 
-	--primary-color: #003314;
-	--secundary-color: #eedec5;
+	--dark-color: #016644;
+	--primary-color: #4e7a6b; /* font & border */
+	--secundary-color: #8dab93; /* background */
+	--third-color: #eedec5; /* font light */
+	--fourth-color: #a49078; /* font & border */
+	--fifth-color: #d6d1bd; /* background */
 
 	--background-light: #fafbfe;
-	--background-dark: #282c34;
+	--font-dark: #282c34;
 
 	--font-light: #fafbfe;
-	--font-dark: #686868;
+	/* --font-dark: #686868; */
 }
 
 * {
@@ -25,6 +29,6 @@
 	justify-content: center;
 } */
 
-/* body {
-	background-color: var(--secundary-color);
-} */
+body {
+	background-color: var(--fifth-color);
+}

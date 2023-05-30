@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Nav from '../Nav/Nav.jsx';
 
@@ -16,17 +17,29 @@ export default function Landing() {
 
 						<div className='cover-home'>
 							<img
-								src='../../../assets/logo-estudio-apellidos.png'
+								src='../../../assets/logo-estudio-apellidos-light.png'
 								alt='apellidos'
 							/>
-
 							<div className='contactanos'>
-								<h3>Contactanos</h3>
-
 								<ul>
-									<li>Correo electronico</li>
-									<li>Celular</li>
+									<li>
+										<img src='../../../assets/email-icon.png' alt='email' />
+										martinezojedayasoc@gmail.com
+									</li>
+									<li>
+										<img src='../../../assets/phone-icon.png' alt='telefono' />
+										4441-8678
+									</li>
+									<li>
+										<img
+											src='../../../assets/whatsapp-icon.png'
+											alt='whatsapp'
+										/>
+										whatsapp
+									</li>
 								</ul>
+
+								<button>Agendar turno</button>
 							</div>
 						</div>
 					</div>
@@ -43,35 +56,41 @@ export default function Landing() {
 						<div className='cover-nosotros'>
 							<h2>Sobre nosotros</h2>
 
-							<p>
-								Somos un equipo de trabajo que brinda asesoramiento y patrocinio
-								jurídico desde el año 2001 en Asuntos de familia (divorcios,
-								alimentos, filiaciones, tenencias, régimen de visitas, etc.),
-								Sucesiones, Laboral (despido, accidentes y enfermedades
-								laborales), Jubilaciones y pensiones, Daños y perjuicios,
-								accidentes de tránsito, Desalojos, Contratos, Comercial, Asuntos
-								penales (defensas penales, excarcelaciones, juicios orales,
-								denuncias).
-							</p>
-							<p>
-								En la Provincia de Bs. As. en nuestro estudio se encuentran la
-								Dra. Estrella Martínez, la Dra. Olga Ojeda y el Dr. Carlos Gómez
-								Ibarlucea. Ubicados en Arieta 2809 primer piso, San Justo.
-							</p>
-							<p>
-								Desde el año 2016 nos acompaña desde La Pampa la Dra. Gabriela
-								Forte con oficinas en, General Pico y Quemú-Quemú.
-							</p>
+							<div className='cover-texto'>
+								<p>
+									Somos un equipo de trabajo que brinda asesoramiento y
+									patrocinio jurídico desde el año 2001 en Asuntos de familia
+									(divorcios, alimentos, filiaciones, tenencias, régimen de
+									visitas, etc.), Sucesiones, Laboral (despido, accidentes y
+									enfermedades laborales), Jubilaciones y pensiones, Daños y
+									perjuicios, accidentes de tránsito, Desalojos, Contratos,
+									Comercial, Asuntos penales (defensas penales, excarcelaciones,
+									juicios orales, denuncias).
+								</p>
+								<p>
+									En la Provincia de Bs. As. en nuestro estudio se encuentran la
+									Dra. Estrella Martínez, la Dra. Olga Ojeda y el Dr. Carlos
+									Gómez Ibarlucea. Ubicados en Arieta 2809 primer piso, San
+									Justo.
+								</p>
+								<p>
+									Desde el año 2016 nos acompaña desde La Pampa la Dra. Gabriela
+									Forte con oficinas en, General Pico y Quemú-Quemú.
+								</p>
+							</div>
 						</div>
 					</div>
 				</section>
 
-				<section id='areas'>
+				<section id='áreas-de-práctica'>
 					<div className='container-areas'>
 						<h2>Áreas de práctica</h2>
 
-						<div className='cover-cards'>
-							<div className='card laboral'>
+						<div className='cards-areas'>
+							<div className='card-area laboral'>
+								<div className='icono'>
+									<img src='../../../assets/balanza.png' alt='balanza' />
+								</div>
 								<h3>Derecho Laboral</h3>
 
 								<ul>
@@ -79,9 +98,18 @@ export default function Landing() {
 									<li>Accidentes</li>
 									<li>Enfermedades laborales</li>
 								</ul>
+
+								<div className='mas-info'>
+									<Link to='/laboral'>Más info.</Link>
+									<hr />
+								</div>
 							</div>
 
-							<div className='card penal'>
+							<div className='card-area penal'>
+								<div className='icono'>
+									<img src='../../../assets/martillo.png' alt='martillo' />
+								</div>
+
 								<h3>Derecho Penal</h3>
 
 								<ul>
@@ -89,9 +117,21 @@ export default function Landing() {
 									<li>Delitos contra la propiedad</li>
 									<li>Delitos contra la seguridad y el orden público</li>
 								</ul>
+
+								<div className='mas-info'>
+									<Link to='/penal'>Más info.</Link>
+									<hr />
+								</div>
 							</div>
 
-							<div className='card familia'>
+							<div className='card-area familia'>
+								<div className='icono'>
+									<img
+										src='../../../assets/anillos-de-boda.png'
+										alt='anillos'
+									/>
+								</div>
+
 								<h3>Familia y sucesiones</h3>
 
 								<ul>
@@ -99,6 +139,10 @@ export default function Landing() {
 									<li>Divorcios</li>
 									<li>Cuotas alimentarias</li>
 								</ul>
+								<div className='mas-info'>
+									<Link to='/familia'>Más info.</Link>
+									<hr />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -108,8 +152,8 @@ export default function Landing() {
 					<div className='container-servicios'>
 						<h2>Nuestros servicios</h2>
 
-						<div className='cover-cards'>
-							<div className='card disponibilidad'>
+						<div className='cards-servicios'>
+							<div className='card-servicios disponibilidad'>
 								<h3>Disponibilidad</h3>
 
 								<ul>
@@ -118,7 +162,7 @@ export default function Landing() {
 								</ul>
 							</div>
 
-							<div className='card expedientes'>
+							<div className='card-servicios expedientes'>
 								<h3>Expediente virtual</h3>
 
 								<ul>
@@ -127,7 +171,7 @@ export default function Landing() {
 								</ul>
 							</div>
 
-							<div className='card pagos'>
+							<div className='card-servicios pagos'>
 								<h3>Formas de pago</h3>
 
 								<ul>
