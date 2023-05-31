@@ -195,7 +195,7 @@ export default function Landing() {
 					<div className='container-contacto'>
 						<h2>Contacto</h2>
 
-						<div class='cover-info'>
+						<div className='cover-info'>
 							<div className='cover-datos'>
 								<div className='contactos'>
 									<div className='title-img'>
@@ -264,24 +264,18 @@ export default function Landing() {
 							</div>
 
 							<form id='form' name='contact' method='POST' data-netlify='true'>
-								<label htmlFor='name' for='name'>
-									Nombre
-								</label>
+								<label htmlFor='name'>Nombre</label>
 								<input type='text' name='name' autoComplete='off' />
 
-								<label htmlFor='email' for='email'>
-									Correo electronico
-								</label>
+								<label htmlFor='email'>Correo electronico</label>
 								<input type='email' name='email' />
 
-								<label htmlFor='subject' for='subject' autoComplete='off'>
+								<label htmlFor='subject' autoComplete='off'>
 									Asunto
 								</label>
 								<input type='text' name='subject' />
 
-								<label htmlFor='text' for='message'>
-									Mensaje
-								</label>
+								<label htmlFor='text'>Mensaje</label>
 								<textarea name='message'></textarea>
 
 								<div className='cover-submit'>
@@ -380,9 +374,7 @@ export default function Landing() {
 
 								<iframe
 									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1538133813438!2d-58.56659472549342!3d-34.67606726132062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62e42276df5%3A0x4190efc310e17020!2sDr.%20Ignacio%20Arieta%202809%2C%20B1754APW%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1685508697776!5m2!1ses!2sar'
-									allowfullscreen=''
 									loading='lazy'
-									referrerpolicy='no-referrer-when-downgrade'
 								></iframe>
 							</div>
 
@@ -391,9 +383,7 @@ export default function Landing() {
 
 								<iframe
 									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8436114703663!2d-63.75478882543033!3d-35.65622451384127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c37d592b74ec9d%3A0x46cf814609ecbfc3!2sC.%2026%20545%2C%20Gral.%20Pico%2C%20La%20Pampa!5e0!3m2!1ses!2sar!4v1685559563647!5m2!1ses!2sar'
-									allowfullscreen=''
 									loading='lazy'
-									referrerpolicy='no-referrer-when-downgrade'
 								></iframe>
 							</div>
 						</div>
