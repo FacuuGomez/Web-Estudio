@@ -53,9 +53,9 @@ export default function Landing() {
 
 				<section id='nosotros'>
 					<div className='container-nosotros'>
-						<div className='cover-nosotros'>
-							<h2>Sobre nosotros</h2>
+						<h2>Sobre nosotros</h2>
 
+						<div className='cover-nosotros'>
 							<div className='cover-texto'>
 								<p>
 									Somos un equipo de trabajo que brinda asesoramiento y
@@ -78,6 +78,8 @@ export default function Landing() {
 									Forte con oficinas en, General Pico y Quemú-Quemú.
 								</p>
 							</div>
+
+							<img src='../../../assets/team-work.svg' alt='team-work' />
 						</div>
 					</div>
 				</section>
@@ -187,10 +189,100 @@ export default function Landing() {
 					<div className='container-contacto'>
 						<h2>Contacto</h2>
 
-						<ul>
-							<li>Correo electronico</li>
-							<li>Celular</li>
-						</ul>
+						<div class='cover-info'>
+							<div className='cover-datos'>
+								<div className='contactos'>
+									<div className='title-img'>
+										<img src='../../../assets/contactos.png' alt='contactos' />
+										<h3>Medios de contacto</h3>
+									</div>
+
+									<ul>
+										<li>
+											<img
+												src='../../../assets/phone-icon-green.png'
+												alt='phone-green'
+											/>
+											Telefono
+										</li>
+										<li>
+											<img
+												src='../../../assets/email-icon-green.png'
+												alt='email-green'
+											/>
+											Email
+										</li>
+										<li>
+											<img
+												src='../../../assets/whatsapp-icon-green.png'
+												alt='whatsapp-green'
+											/>
+											Whatsapp
+										</li>
+									</ul>
+								</div>
+								<div className='horarios'>
+									<div className='title-img'>
+										<img src='../../../assets/reloj.png' alt='reloj' />
+
+										<h3>Nuestro horario</h3>
+									</div>
+									<ul>
+										<li>Lunes a Viernes 13:00 a 17:00 hs</li>
+										{/* <li>Sabado</li> */}
+									</ul>
+								</div>
+								<div className='redes'>
+									<div className='title-img'>
+										<img src='../../../assets/seguir.png' alt='redes' />
+
+										<h3>Seguinos</h3>
+									</div>
+									<ul>
+										<li>
+											<img
+												src='../../../assets/facebook-icono.png'
+												alt='facebook'
+											/>
+											Facebook
+										</li>
+										<li>
+											<img
+												src='../../../assets/instagram-icono.png'
+												alt='instagram'
+											/>
+											Instagram
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<form id='form' name='contact' method='POST' data-netlify='true'>
+								<label htmlFor='name' for='name'>
+									Nombre
+								</label>
+								<input type='text' name='name' autoComplete='off' />
+
+								<label htmlFor='email' for='email'>
+									Correo electronico
+								</label>
+								<input type='email' name='email' />
+
+								<label htmlFor='subject' for='subject' autoComplete='off'>
+									Asunto
+								</label>
+								<input type='text' name='subject' />
+
+								<label htmlFor='text' for='message'>
+									Mensaje
+								</label>
+								<textarea name='message'></textarea>
+
+								<div className='cover-submit'>
+									<button type='submit'>Enviar</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</section>
 			</main>
