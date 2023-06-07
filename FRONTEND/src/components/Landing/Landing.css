@@ -46,12 +46,23 @@
 }
 
 .contactanos ul {
-	color: var(--third-color);
 	list-style: none;
 	padding-bottom: 10px;
 }
 
+.contactanos a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--third-color);
+}
+
+.contactanos a:hover {
+	opacity: 0.7;
+}
+
 .contactanos li {
+	color: var(--third-color);
 	padding-bottom: 10px;
 	display: flex;
 	align-items: center;
@@ -77,7 +88,6 @@
 }
 
 .contactanos button:hover {
-	/* opacity: 0.7; */
 	background-color: var(--fourth-color);
 }
 
@@ -107,6 +117,7 @@
 #nosotros {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .container-nosotros {
@@ -114,7 +125,6 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
 	height: 100vh;
 	width: 100%;
 	max-width: 1000px;
@@ -129,7 +139,6 @@
 .cover-nosotros {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	width: 100%;
 }
 
@@ -155,7 +164,6 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-
 	width: 100%;
 	max-width: 1000px;
 	height: 100vh;
@@ -214,7 +222,7 @@
 }
 
 .mas-info:hover {
-	opacity: 0.7;
+	background-color: var(--fourth-color);
 }
 
 .card-area a {
@@ -275,7 +283,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100px;
+	height: 110px;
 	width: 200px;
 	padding: 30px;
 	background-color: rgba(214, 209, 189, 0.5);
@@ -294,12 +302,42 @@
 	border-radius: 20px 0px 0px 20px;
 }
 
+.disponibilidad-img::before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 5px;
+	background-image: url('../../../assets/disponibilidad.png');
+	background-size: cover;
+}
+
 .expedientes {
 	margin: 0px 2px;
 }
 
+.expedientes-img::before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 5px;
+	background-image: url('../../../assets/expedientes.png');
+	background-size: cover;
+}
+
 .pagos {
 	border-radius: 0px 20px 20px 0px;
+}
+
+.pagos-img::before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 5px;
+	background-image: url('../../../assets/pagos.png');
+	background-size: cover;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -320,7 +358,6 @@
 	max-width: 800px;
 	margin-top: 50px;
 	padding: 20px 0px;
-	/* background-color: rgb(78, 122, 107, 0.5); */
 	background-color: rgb(164, 144, 120, 0.2);
 
 	border-radius: 20px;
@@ -344,7 +381,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	color: var(--fourth-color);
+	color: var(--primary-color);
 }
 
 .cover-info label {
@@ -397,6 +434,17 @@
 	color: var(--primary-color);
 	width: 50%;
 	padding-top: 20px;
+}
+
+.cover-datos a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+.cover-datos a:hover {
+	opacity: 0.7;
 }
 
 .cover-datos img {
@@ -454,7 +502,7 @@
 /* ---------------------------------------------------------------------------------------- */
 
 .wave_2 {
-	height: 100px;
+	height: 80px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -523,7 +571,14 @@ footer {
 	align-items: center;
 }
 
-.contact_card li:hover {
+.contact_card a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--third-color);
+}
+
+.contact_card a:hover {
 	opacity: 0.7;
 	cursor: pointer;
 }

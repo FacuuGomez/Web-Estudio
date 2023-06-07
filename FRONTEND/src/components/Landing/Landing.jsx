@@ -24,24 +24,37 @@ export default function Landing() {
 								<ul>
 									<li>
 										<img
-											src='../../../assets/email-icon-light.png'
-											alt='email'
-										/>
-										martinezojedayasoc@gmail.com
-									</li>
-									<li>
-										<img
 											src='../../../assets/phone-icon-light.png'
 											alt='telefono'
 										/>
 										4441-8678
 									</li>
 									<li>
-										<img
-											src='../../../assets/whatsapp-icon-light.png'
-											alt='whatsapp'
-										/>
-										whatsapp
+										<a
+											href='mailto:martinezojedayasoc@gmail.com'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img
+												src='../../../assets/email-icon-light.png'
+												alt='email'
+											/>
+											martinezojedayasoc@gmail.com
+										</a>
+									</li>
+
+									<li>
+										<a
+											href='https://api.whatsapp.com/send?phone=1154935036'
+											target='_blank'
+											title='Whatsapp'
+										>
+											<img
+												src='../../../assets/whatsapp-icon-light.png'
+												alt='whatsapp'
+											/>
+											whatsapp
+										</a>
 									</li>
 								</ul>
 
@@ -162,6 +175,7 @@ export default function Landing() {
 
 						<div className='cards-servicios'>
 							<div className='card-servicios disponibilidad'>
+								<span className='disponibilidad-img'></span>
 								<h3>Disponibilidad</h3>
 
 								<ul>
@@ -171,6 +185,7 @@ export default function Landing() {
 							</div>
 
 							<div className='card-servicios expedientes'>
+								<span className='expedientes-img'></span>
 								<h3>Expediente virtual</h3>
 
 								<ul>
@@ -180,6 +195,7 @@ export default function Landing() {
 							</div>
 
 							<div className='card-servicios pagos'>
+								<span className='pagos-img'></span>
 								<h3>Formas de pago</h3>
 
 								<ul>
@@ -207,26 +223,39 @@ export default function Landing() {
 										<li>
 											<img
 												src='../../../assets/phone-icon-green.png'
-												alt='phone-green'
+												alt='phone'
 											/>
 											4441 - 8678
 										</li>
 										<li>
-											<img
-												src='../../../assets/email-icon-green.png'
-												alt='email-green'
-											/>
-											martinezojedayasoc@gmail.com
+											<a
+												href='mailto:martinezojedayasoc@gmail.com'
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												<img
+													src='../../../assets/email-icon-green.png'
+													alt='email'
+												/>
+												martinezojedayasoc@gmail.com
+											</a>
 										</li>
 										<li>
-											<img
-												src='../../../assets/whatsapp-icon-green.png'
-												alt='whatsapp-green'
-											/>
-											Whatsapp
+											<a
+												href='https://api.whatsapp.com/send?phone=1154935036'
+												target='_blank'
+												title='Whatsapp'
+											>
+												<img
+													src='../../../assets/whatsapp-icon-green.png'
+													alt='whatsapp-green'
+												/>
+												whatsapp
+											</a>
 										</li>
 									</ul>
 								</div>
+
 								<div className='horarios'>
 									<div className='title-img'>
 										<img src='../../../assets/reloj.png' alt='reloj' />
@@ -235,7 +264,6 @@ export default function Landing() {
 									</div>
 									<ul>
 										<li>Lunes a Viernes 13:00 a 17:00 hs</li>
-										{/* <li>Sabado</li> */}
 									</ul>
 								</div>
 								<div className='redes'>
@@ -246,18 +274,30 @@ export default function Landing() {
 									</div>
 									<ul>
 										<li>
-											<img
-												src='../../../assets/facebook-icono.png'
-												alt='facebook'
-											/>
-											Facebook
+											<a
+												href='https://www.facebook.com/martinez.ojeda.gomezibarlucea.y.asoc'
+												target='_blank'
+												title='Facebook'
+											>
+												<img
+													src='../../../assets/facebook-icono.png'
+													alt='Facebook'
+												/>
+												Facebook
+											</a>
 										</li>
 										<li>
-											<img
-												src='../../../assets/instagram-icono.png'
-												alt='instagram'
-											/>
-											Instagram
+											<a
+												href='https://www.instagram.com/martinez_ojeda_gomezibarlucea/'
+												target='_blank'
+												title='Instagram'
+											>
+												<img
+													src='../../../assets/instagram-icono.png'
+													alt='instagram'
+												/>
+												Instagram
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -335,30 +375,57 @@ export default function Landing() {
 									4441 - 8678
 								</li>
 								<li>
-									<img src='../../../assets/email-icon-light.png' alt='email' />
-									martinezojedayasoc@gmail.com
+									<a
+										href='mailto:martinezojedayasoc@gmail.com'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<img
+											src='../../../assets/email-icon-light.png'
+											alt='email'
+										/>
+										martinezojedayasoc@gmail.com
+									</a>
 								</li>
 							</ul>
 
 							<div className='social_medias'>
 								<ul>
 									<li>
-										<img
-											src='../../../assets/whatsapp-icon-light.png'
-											alt='whatsapp'
-										/>
+										<a
+											href='https://api.whatsapp.com/send?phone=1154935036'
+											target='_blank'
+											title='Whatsapp'
+										>
+											<img
+												src='../../../assets/whatsapp-icon-light.png'
+												alt='Whatsapp'
+											/>
+										</a>
 									</li>
 									<li>
-										<img
-											src='../../../assets/facebook-icon-light.png'
-											alt='facebook'
-										/>
+										<a
+											href='https://www.facebook.com/martinez.ojeda.gomezibarlucea.y.asoc'
+											target='_blank'
+											title='Facebook'
+										>
+											<img
+												src='../../../assets/facebook-icon-light.png'
+												alt='Facebook'
+											/>
+										</a>
 									</li>
 									<li>
-										<img
-											src='../../../assets/instagram-icon-light.png'
-											alt='instagram'
-										/>
+										<a
+											href='https://www.instagram.com/martinez_ojeda_gomezibarlucea/'
+											target='_blank'
+											title='Instagram'
+										>
+											<img
+												src='../../../assets/instagram-icon-light.png'
+												alt='Instagram'
+											/>
+										</a>
 									</li>
 								</ul>
 							</div>
