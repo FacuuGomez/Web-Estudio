@@ -41,7 +41,7 @@ header {
 }
 
 header::before {
-	z-index: 0;
+	z-index: -1;
 	content: '';
 	position: absolute;
 	/* bottom: 0;
@@ -102,13 +102,22 @@ nav a:hover {
 	opacity: 0.7;
 }
 
+nav select {
+	cursor: pointer;
+}
+
 .dropdown {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	padding: 10px 0px;
-	margin: 0px 15px;
+	padding-bottom: 10px;
+	margin: 10px 15px 0px 15px;
+}
+
+.dropdown p {
+	color: var(--third-color);
+	cursor: default;
 }
 
 .dropdown-content {
@@ -125,6 +134,7 @@ nav a:hover {
 }
 
 .dropdown-content a p:hover {
+	cursor: pointer;
 	transition: all 0.2s;
 	opacity: 0.7;
 }

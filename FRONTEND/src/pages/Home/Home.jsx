@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import Nav from '../../components/Nav/Nav.jsx';
 import Banner from '../../components/Banner/Banner.jsx';
@@ -9,18 +9,27 @@ import Footer from '../../components/Footer/Footer.jsx';
 import './Home.css';
 
 export default function Home() {
+	const location = useLocation();
+
+	useEffect(() => {
+		if (location.hash) {
+			const element = document.getElementById(location.hash.slice(1));
+			if (element) {
+				// Desplazar hacia el elemento correspondiente al hash
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
+		} else {
+			// Si no hay un hash en la URL, desplazarse al inicio de la página
+			window.scrollTo(0, 0);
+		}
+	}, []);
+
 	return (
 		<div className='container_home'>
 			<Nav />
 
 			<main>
 				<Banner />
-
-				{/* <div className='wave-1'>
-					<svg viewBox='0 0 500 150' preserveAspectRatio='none'>
-						<path d='M-7.05,115.95 C194.41,55.75 304.45,53.77 506.49,115.95 L500.00,150.00 L0.00,150.00 Z'></path>
-					</svg>
-				</div> */}
 
 				{/* NOSOTROS  */}
 
@@ -77,7 +86,7 @@ export default function Home() {
 								</ul>
 
 								<div className='mas-info'>
-									<Link to='/laboral'>Más info.</Link>
+									<Link to='/areas#laboral'>Más info.</Link>
 									<hr />
 								</div>
 							</div>
@@ -96,7 +105,7 @@ export default function Home() {
 								</ul>
 
 								<div className='mas-info'>
-									<Link to='/penal'>Más info.</Link>
+									<Link to='/areas#penal'>Más info.</Link>
 									<hr />
 								</div>
 							</div>
@@ -117,7 +126,7 @@ export default function Home() {
 									<li>Cuotas alimentarias</li>
 								</ul>
 								<div className='mas-info'>
-									<Link to='/familia'>Más info.</Link>
+									<Link to='/areas#familia'>Más info.</Link>
 									<hr />
 								</div>
 							</div>
@@ -168,17 +177,7 @@ export default function Home() {
 				<Contact />
 			</main>
 
-			<div className='wave_2'>
-				<svg viewBox='0 0 500 150' preserveAspectRatio='none'>
-					<path d='M-11.00,46.87 C244.64,191.93 306.71,-41.93 512.69,82.40 L500.00,150.00 L0.00,150.00 Z'></path>
-				</svg>
-			</div>
-
 			<Footer />
-
-			<div className='last_line'>
-				<p>Estudio Jurídico Martinez • Ojeda • Gómez Ibarlucea © 2023</p>
-			</div>
 		</div>
 	);
 }
