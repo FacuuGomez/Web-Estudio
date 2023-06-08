@@ -127,3 +127,11 @@ footer {
 	stroke: none;
 	fill: var(--primary-color);
 }
+
+.last_line {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px;
+	background-color: var(--fourth-color);
+	color: var(--third-color);
+}
