@@ -112,27 +112,3 @@ export default function Nav() {
 		</header>
 	);
 }
-
-{
-	/* <select
-							name='AREAS'
-							className='options'
-							onChange={(e) => {
-								handleChange(e);
-							}}
-						>
-							<option disable='true'>AREAS</option>
-
-							<option value='penal'>
-								<a href='#penal'>Penal</a>
-							</option>
-
-							<option value='laboral'>
-								<a href='#laboral'>Laboral</a>
-							</option>
-
-							<option value='familia'>
-								<a href='#familia'>Familia</a>
-							</option>
-						</select> */
-}
