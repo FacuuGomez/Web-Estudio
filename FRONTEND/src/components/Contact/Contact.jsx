@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Contact.css';
 
 export default function Contact() {
+	const [successContact, setSuccessContact] = useState(false);
+
+	const handleSumbit = (e) => {
+		e.preventDefault();
+
+		const form = new FormData(e.target);
+
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(form).toString(),
+		})
+			.then(() => {
+				setSuccessContact(true);
+
+				setTimeout(function () {
+					setSuccessContact(false);
+				}, 2500);
+
+				e.target.reset();
+			})
+			.catch((error) => alert(error));
+	};
+
 	return (
 		<div id='contacto'>
 			<div className='container-contacto'>
@@ -97,7 +121,13 @@ export default function Contact() {
 						</div>
 					</div>
 
-					<form id='form' name='contact' method='POST' data-netlify='true'>
+					<form
+						id='form'
+						name='contact'
+						method='POST'
+						data-netlify='true'
+						onSubmit={(e) => handleSumbit(e)}
+					>
 						<label htmlFor='name'>Nombre</label>
 						<input type='text' name='name' autoComplete='off' />
 
@@ -116,6 +146,12 @@ export default function Contact() {
 							<button type='submit'>Enviar</button>
 						</div>
 					</form>
+				</div>
+			</div>
+
+			<div id={successContact ? 'success-contact' : 'none'}>
+				<div id='modal-contact'>
+					<p>¡ Gracias por contactarnos !</p>
 				</div>
 			</div>
 		</div>

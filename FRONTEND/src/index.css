@@ -5,12 +5,6 @@
 	--third-color: #eee8d2; /* font light */
 	--fourth-color: #a49078; /* font & border */
 	--fifth-color: #d6d1bd; /* background */
-
-	/* --background-light: #fafbfe; */
-	/* --font-dark: #282c34; */
-
-	/* --font-light: #fafbfe; */
-	/* --font-dark: #686868; */
 }
 
 * {
@@ -18,7 +12,6 @@
 	padding: 0;
 	scroll-behavior: smooth;
 	font-family: 'Roboto';
-	/* letter-spacing: 0.5px; */
 }
 
 body {
