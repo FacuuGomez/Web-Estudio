@@ -33,11 +33,16 @@
 
 .cover-nosotros img {
 	width: 400px;
+	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .cover-texto {
 	color: var(--dark-color);
 	width: 450px;
+	background-color: rgb(164, 144, 120, 0.2);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	border-radius: 20px;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -79,6 +84,7 @@
 
 	position: relative;
 	background-color: rgb(164, 144, 120, 0.2);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-area ul {
@@ -165,6 +171,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-servicios {

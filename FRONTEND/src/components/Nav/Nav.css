@@ -117,7 +117,6 @@ nav select {
 
 .dropdown p {
 	color: var(--third-color);
-	cursor: default;
 }
 
 .dropdown-content {
@@ -126,17 +125,19 @@ nav select {
 	text-align: center;
 	width: 100%;
 	top: 100%;
-	border-radius: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content p {
+	opacity: 1;
 }
 
 .dropdown-content a:hover {
 	opacity: 1;
-}
-
-.dropdown-content a p:hover {
 	cursor: pointer;
+	background-color: rgb(164, 144, 120, 0.7);
 	transition: all 0.2s;
-	opacity: 0.7;
 }
 
 .link {
@@ -178,6 +179,7 @@ nav select {
 	padding: 3px 3px 0px 3px;
 	background-color: var(--primary-color);
 	transition: all 0.2s;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .user-icon:hover {

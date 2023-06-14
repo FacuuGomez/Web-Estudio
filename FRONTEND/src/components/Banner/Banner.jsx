@@ -13,6 +13,7 @@ export default function Banner() {
 						src='../../../assets/logo-estudio-apellidos-light.png'
 						alt='apellidos'
 					/>
+
 					<div className='contactanos'>
 						<ul>
 							<li>

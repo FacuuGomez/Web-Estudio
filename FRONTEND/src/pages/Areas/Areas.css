@@ -42,10 +42,12 @@ section {
 
 .cover_info img {
 	width: 400px;
+	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
 }
 
 .cover_text {
 	background-color: rgb(164, 144, 120, 0.2);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 	border-radius: 20px;
 	color: var(--dark-color);

@@ -27,17 +27,17 @@ export default function footer() {
 
 							<ul>
 								<li>
-									<Link to='/penal'>
+									<Link to='/areas#penal'>
 										<p>▸ Penal</p>
 									</Link>
 								</li>
 								<li>
-									<Link to='/laboral'>
+									<Link to='/areas#laboral'>
 										<p>▸ Laboral</p>
 									</Link>
 								</li>
 								<li>
-									<Link to='/familia'>
+									<Link to='/areas#familia'>
 										<p>▸ Familia</p>
 									</Link>
 								</li>

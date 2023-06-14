@@ -73,24 +73,6 @@ export default function Home() {
 						<h2>Áreas de práctica</h2>
 
 						<div className='cards-areas'>
-							<div className='card-area laboral'>
-								<div className='icono'>
-									<img src='../../../assets/balanza.png' alt='balanza' />
-								</div>
-								<h3>Derecho Laboral</h3>
-
-								<ul>
-									<li>Despidos</li>
-									<li>Accidentes</li>
-									<li>Enfermedades laborales</li>
-								</ul>
-
-								<div className='mas-info'>
-									<Link to='/areas#laboral'>Más info.</Link>
-									<hr />
-								</div>
-							</div>
-
 							<div className='card-area penal'>
 								<div className='icono'>
 									<img src='../../../assets/martillo.png' alt='martillo' />
@@ -106,6 +88,24 @@ export default function Home() {
 
 								<div className='mas-info'>
 									<Link to='/areas#penal'>Más info.</Link>
+									<hr />
+								</div>
+							</div>
+
+							<div className='card-area laboral'>
+								<div className='icono'>
+									<img src='../../../assets/balanza.png' alt='balanza' />
+								</div>
+								<h3>Derecho Laboral</h3>
+
+								<ul>
+									<li>Despidos</li>
+									<li>Accidentes</li>
+									<li>Enfermedades laborales</li>
+								</ul>
+
+								<div className='mas-info'>
+									<Link to='/areas#laboral'>Más info.</Link>
 									<hr />
 								</div>
 							</div>
