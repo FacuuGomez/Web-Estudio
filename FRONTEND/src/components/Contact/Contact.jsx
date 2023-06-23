@@ -20,7 +20,7 @@ export default function Contact() {
 
 				setTimeout(function () {
 					setSuccessContact(false);
-				}, 2500);
+				}, 2000);
 
 				e.target.reset();
 			})

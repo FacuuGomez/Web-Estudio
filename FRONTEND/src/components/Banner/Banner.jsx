@@ -49,7 +49,9 @@ export default function Banner() {
 							</li>
 						</ul>
 
-						<button>Agendar turno</button>
+						<a href='#contacto'>
+							<button>Agendar turno</button>
+						</a>
 					</div>
 				</div>
 			</div>
